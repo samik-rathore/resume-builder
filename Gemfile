@@ -7,7 +7,9 @@ gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1'
+gem 'pg', '~> 1.1', group: :production
+gem 'pg', '~> 1.1', group: :development
+gem 'rails_12factor'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
